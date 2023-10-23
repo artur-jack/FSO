@@ -82,7 +82,15 @@ Algoritmo projetado para sistemas em lote. A ideia é dado um conjunto de proces
 
 # Trheads
 
-São meio que um processo mais leve do que o processe tradicional. 
+Podem ser definidas como sendo as linhas de execução de um processo. Então, o processo é composto por um conjunto de Threads, onde ele obrigatoriamente deve possuir pelo menos uma Thread (uma linha de execução).
+
+## Processo X Thread
+
+- Um processo não compartilha o espaço de endereçamento com outros processos.
+- Já as Threads compartilham o mesmo espaço de endereçamento com outras Threads.
+- As Threads são mais rápidas de criar e destruir que os processos.
+
+Então deve ser criados mecânismos para que não ocorra competição no uso dos recursos (espaço de endereçamento).
 
 # Condição de Corrida
 
@@ -122,6 +130,7 @@ As condições de corrida levam a resultados inesperados e devem ser evitadas. P
 Então como todos os processos estão esperando, nenhum deles poderá causar qualquer evento que possa despertar outros membros do conjunto, e todos os processos continuam esperando para sempre.
 
 ## Condições para ocorrência de DeadLock
+
 Segundo Coffman et al. (1971) existem quatro condições para ocorrer um deadlock:
 
 1- Exclusão Mútua:  cada recurso está associado a um processo ou está disponível.
