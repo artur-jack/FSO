@@ -47,10 +47,10 @@ First-Out).
   – Algoritmo eficiente: a CPU sempre é utilizada
   
 - Desvantagens:
-  – Impossibilidade de se prever quando um processo vai 
+  - Impossibilidade de se prever quando um processo vai 
   iniciar
-  – Tempo média de espera de processos não é priorizado
-  – Processos que usam muito a CPU levam vantagens sobre 
+  - Tempo média de espera de processos não é priorizado
+  - Processos que usam muito a CPU levam vantagens sobre 
   processos que causam muito seu bloqueio
 
 
