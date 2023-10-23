@@ -60,7 +60,7 @@ Cada processo tem o direito de usar o processador por um intervalo de tempo pré
 
 - Um dos maiores problemas do algoritmo de escalonamento round-robin diz a respeito da determinação de um bom valor a ser atribuído ao quantum
 - Para determinar esse valor, deve-se considerar o tempo médio da troca de contexto e o tempo de resposta desejado
-  – Qual a influência que o tempo da troca de contexto?
+  - Qual a influência que o tempo da troca de contexto?
 - Quantum padrão 100 ms
 
 ## Escalonamento com Prioridades
@@ -71,8 +71,8 @@ As prioridades podem ser atribuídas de duas formas: estática ou dinâmica
 
 - Estática: os processos são divididos em classes e a cada classe é atribuída uma prioridade. A cada prioridade existe uma fila de prontos associada.
 - Dinâmica: o sistema analisa o comportamento dos processos e atribui prioridades favorecendo um certo tipo de comportamento
-  – Processos I/O devem possuir prioridade alta
-  – Prioridade dinâmica: 1/f, onde f é a fração do quantum de tempo usada na última rodada do processo
+  - Processos I/O devem possuir prioridade alta
+  - Prioridade dinâmica: 1/f, onde f é a fração do quantum de tempo usada na última rodada do processo
 
 ## Shortest Job First
 
