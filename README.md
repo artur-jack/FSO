@@ -95,21 +95,36 @@ As condições de corrida levam a resultados inesperados e devem ser evitadas. P
 - Inibir Interrupções
   
 - Com espera ocupada:
-
+  
   - Estrita Alternância
-  
   - Algoritmo de Peterson
-  
   - Utilizar hardware adicional
-  
+   
 - Com bloqueio de processos:
   
   - Semáforos
-  
   - Mutexes
-  
   - Locks
-  
   - Monitores
-  
   - Variáveis de condição
+    
+# DeadLock
+
+É um problema que ocorre quando os programas/threads aguardam um recurso que não é liberado
+
+- Starvation: quando os mecanismos de sincronização não permitem que o programa avance
+- Em geral, deadlocks ocorrem em recursos não-preemptíveis(Um recurso que não pode ser tomado à força, onde o processo que o possui deve liberá-los espontaneamente).
+- Em recursos preemptíveis a simples transferência de recursos os resolve.
+
+**Definição formal de deadlock:**
+“Um conjunto de processos estará em situação de deadlock se cada processo no conjunto estiver esperando por um evento que apenas outro processo no conjunto pode causar”
+
+Então como todos os processos estão esperando, nenhum deles poderá causar qualquer evento que possa despertar outros membros do conjunto, e todos os processos continuam esperando para sempre.
+
+## Condições para ocorrência de DeadLock
+Segundo Coffman et al. (1971) existem quatro condições para ocorrer um deadlock:
+
+1- Exclusão Mútua:  cada recurso está associado a um processo ou está disponível.
+2- Posse e espera:  processo atualmente de posse de recursos que foram concedidos antes podem solicitar novos recursos.
+3- não-preempção:  recursos concedidos antes não podem ser liberados à força.
+4- Espera circular:  deve haver uma lista circular de dois ou mais processos esperando por recursos detido pelo próximo membro da cadeia.
