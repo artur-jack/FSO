@@ -1,5 +1,11 @@
 # Conceitos
 
+## Estados de um processo
+
+- Rodando
+- Bloqueado
+- Pronto
+- 
 ## Preempção
 
 O escalonador pode ser preemptivo ou não preemptivo. Onde a preempção é a suspensão temporária da execução de um processo.
@@ -73,3 +79,27 @@ As prioridades podem ser atribuídas de duas formas: estática ou dinâmica
 Algoritmo projetado para sistemas em lote. A ideia é dado um conjunto de processos, execute os de menor tempo de execução antes.
 - Reduzir o tempo de turnaround (tempo de lançamento do processo até seu término)
 - Requer que o tempo total de execução do processo seja conhecido antes do seu início
+
+# Trheads
+
+São meio que um processo mais leve do que o processe tradicional. 
+
+# Condição de Corrida
+
+É um problema que ocorre quando acontece uma troca de contexto em um região crítica envolvendo memória compartilhada entre os processo. Onde a troca de contexto pode afetar o resultado das operações de dois processos que estão alterando a mesma região de memória. 
+
+As condições de corrida levam a resultados inesperados e devem ser evitadas. Precisando, assim, assegurar que os processos que estejam trabalhando na mesma região de memória não sejam interrompidos, ou aguardem o término do outro processo antes de iniciar suas atividades. (Esse processo é conhecido como exclusão mútua).
+
+## Técnicas de Implementação de Exclusão Mútua
+
+- Inibir Interrupções
+- Com espera ocupada:
+  – Estrita Alternância
+  – Algoritmo de Peterson
+  – Utilizar hardware adicional
+- Com bloqueio de processos:
+  – Semáforos
+  – Mutexes
+  – Locks
+  – Monitores
+  – Variáveis de condição
