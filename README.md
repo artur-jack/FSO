@@ -5,7 +5,7 @@
 - Rodando
 - Bloqueado
 - Pronto
-- 
+  
 ## Preempção
 
 O escalonador pode ser preemptivo ou não preemptivo. Onde a preempção é a suspensão temporária da execução de um processo.
