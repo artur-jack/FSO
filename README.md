@@ -93,13 +93,23 @@ As condições de corrida levam a resultados inesperados e devem ser evitadas. P
 ## Técnicas de Implementação de Exclusão Mútua
 
 - Inibir Interrupções
+  
 - Com espera ocupada:
-  – Estrita Alternância
-  – Algoritmo de Peterson
-  – Utilizar hardware adicional
+
+  - Estrita Alternância
+  
+  - Algoritmo de Peterson
+  
+  - Utilizar hardware adicional
+  
 - Com bloqueio de processos:
-  – Semáforos
-  – Mutexes
-  – Locks
-  – Monitores
-  – Variáveis de condição
+  
+  - Semáforos
+  
+  - Mutexes
+  
+  - Locks
+  
+  - Monitores
+  
+  - Variáveis de condição
