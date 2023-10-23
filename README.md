@@ -43,8 +43,8 @@ O escalonador pode ser preemptivo ou não preemptivo. Onde a preempção é a su
 First-Out).
 
 - Vantagens: 
-  – Simples de ser implementado
-  – Algoritmo eficiente: a CPU sempre é utilizada
+  - Simples de ser implementado
+  - Algoritmo eficiente: a CPU sempre é utilizada
   
 - Desvantagens:
   - Impossibilidade de se prever quando um processo vai 
