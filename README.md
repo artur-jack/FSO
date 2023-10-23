@@ -88,7 +88,7 @@ São meio que um processo mais leve do que o processe tradicional.
 
 É um problema que ocorre quando acontece uma troca de contexto em um região crítica envolvendo memória compartilhada entre os processo. Onde a troca de contexto pode afetar o resultado das operações de dois processos que estão alterando a mesma região de memória. 
 
-As condições de corrida levam a resultados inesperados e devem ser evitadas. Precisando, assim, assegurar que os processos que estejam trabalhando na mesma região de memória não sejam interrompidos, ou aguardem o término do outro processo antes de iniciar suas atividades. (Esse processo é conhecido como exclusão mútua).
+As condições de corrida levam a resultados inesperados e devem ser evitadas. Precisando, assim, assegurar que os processos que estejam trabalhando na mesma região de memória não sejam interrompidos, ou aguardem o término do outro processo antes de iniciar suas atividades. (Esse processo é conhecido como **exclusão mútua**).
 
 ## Técnicas de Implementação de Exclusão Mútua
 
@@ -125,6 +125,9 @@ Então como todos os processos estão esperando, nenhum deles poderá causar qua
 Segundo Coffman et al. (1971) existem quatro condições para ocorrer um deadlock:
 
 1- Exclusão Mútua:  cada recurso está associado a um processo ou está disponível.
+
 2- Posse e espera:  processo atualmente de posse de recursos que foram concedidos antes podem solicitar novos recursos.
+
 3- não-preempção:  recursos concedidos antes não podem ser liberados à força.
+
 4- Espera circular:  deve haver uma lista circular de dois ou mais processos esperando por recursos detido pelo próximo membro da cadeia.
